@@ -1,0 +1,9 @@
+body{text-align: center;}
+
+table{border: 2px solid black;
+    width: 10cm;
+    height: 10cm;
+    margin: auto;}
+
+th, td{ border: 2px solid black;
+    border-collapse: collapse;}
