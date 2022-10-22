@@ -1,97 +1,38 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendas PEKA</title>
-    <link rel="stylesheet" href="CSS/Layout.css">
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <script src="JS/bootstrap.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P.E.K.A Store</title>
+  <link rel="stylesheet" href="CSS/Layout.css">
+  <script src="JS/Js.js"></script>
 </head>
 <body>
-    <br><div style="padding-left: 16cm;">Pesquisar: <input type="search"></div>
-    <br>
-    <h1 style="padding-top: 2cm; padding-left: 2cm;">Populares:</h1><br>
-    <div style="height: 50cm; width: 20cm; padding-top: 0,5cm; padding-left: 2cm;">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Img/FNAF.jpg" class="d-block w-100" alt="FNAF" height="382cm">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Five Nigth at Freddy</h5>
-              <p>Um jogo com tematica assustadora onde se passa em uma pizzaria em seu turno noturno.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Red_Dead_Redemption2" class="d-block w-100" alt="Red_Dead_Redemption-2" height="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Red Dead Redemption 2</h5>
-              <p>Resumo</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Img/Minecraft" class="d-block w-100" alt="Minecraft">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Minecraft</h5>
-              <p>Resumo</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div><br>
-      <h1>Destaques:</h1> <br>
+  <div class="topnav">
+    <a class="active" href="View/História_empresa.html">P.E.K.A</a>
+    <a href="Index.html">Loja</a>
+    <a href="View/Perfil.html">Perfil</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
-    <div style="padding-top: 0,5cm;">
-    <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Img/The_Sims4" class="d-block w-100" alt="The Sims4" height="383">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>The Sims4</h5>
-              <p>Resumo</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Img/God_Of_War_Rag" class="d-block w-100" alt="God Of War Ragnarok" height="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>God Of War Ragnarok</h5>
-              <p>Resumo</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Img/The_Binding_Of_Isaac.jpg" class="d-block w-100" alt="Bind Of Isaac" height="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>The Binding of Isaac</h5>
-              <p>Resumo</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+  <div class="slideshow-container">
+    <div class="MySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Img/FNAF.jpg" style="width: 100%;">
+      <div class="text">Resumo</div>
+    </div>
+
+    <div class="slideshow-conteiner">
+      <div class="MySlides fade">2 / 3</div>
+      <img src="Img/Red_Dead_Redemption2" style="width: 100%;">
+      <div class="text">Resumo</div>
+    </div>
+  </div>
 </body>
 </html>
