@@ -6,6 +6,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+    color: #66c0f4;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #171a21;
@@ -72,4 +76,143 @@ body {
     .topnav input[type=text] {
     border: 1px solid #ccc;  
     }
+}
+
+.slideshow-container{
+    max-width: 500px;
+    position: relative;
+    margin: 10px;
+}
+
+.mySlides{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev{
+    left: 0px;
+    width: 20px;
+}
+
+.next{
+    right: 0px;
+    width: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.text{
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: white;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade, .fade2 {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+table{
+    width: 800px;
+    margin: auto;
+    background-color: #171a21;
+    color: #c7d5e0;
+}
+
+td{
+    border-left: 2px solid #2196F3;
+}
+
+th{
+    border-left: 2px solid #2196F3;
+    border-bottom: 2px solid #2196F3;
+}
+
+th, td{
+    text-align: left;
+}
+
+td:hover{
+    background-color: #1b2838;
+    color: white;
+}
+
+.precos{
+    color: #3c8c30;
+}
+
+.wider{
+    width: 600px;
+}
+
+.icon{
+    padding: auto;
+    padding-left: 92px;
+    padding-top: 14px;
+    padding-bottom: auto;
+    float: left;
+}
+
+p.nome{
+    color: white;
+    padding-left: 440px;
+    padding-bottom: 200px;
+    font-size: 31px;
+}
+div.div1{
+    border: 2px solid white;
+    margin: 65px;
+    padding-bottom: 43px;
+}
+
+div.div2{
+    padding-bottom: 500px;
 }
